@@ -3,22 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HandSign AI</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>Teachable Machine Image Model</div>
-    <button type="button" onclick="init()">Start</button>
+    <nav>
+      <div class="logo">HandSign AI</div>
+      <div>
+        <a href="about.html">About</a>
+        <a href="source.html">Source Code</a>
+      </div>
+    </nav>
 
-    <!--div tags get targeted by DOM javascript in script.js-->
-    <div id="webcam-container"></div>
-    <div id="label-container"></div>
+    <div class="content">
+      <div id="ai-content">
+        <div>AI Image Model</div>
+        <div style="margin-top: 20px;" id="webcam-container"></div>
+        <button class="fancy-button" type="button" onclick="init()">Start</button>
+        <div style="margin-top: 20px" id="label-container"></div>
+        <div class="highest-prob"></div>
+      </div>
+      <div id="image-container">
+        <img class="img-main" src="assets/Hand-sign-of-American-alphabet.png" alt="picture of hand signs" />
+      </div>
+    </div>
 
-    
-    <!-- Adds the letter of highest probability that the client is holding to webcam-->
-    <div class="highest-prob"></div>
+    <footer>
+      &copy; 2024 HandSign AI. All rights reserved.
+    </footer>
 
-
-    <!-- This script loads min.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script type="text/javascript" src="script.js"></script>

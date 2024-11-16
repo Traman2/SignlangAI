@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #1B1B1B;
+    overflow: hidden; /* Prevent vertical scroll */
+  }
+  nav {
+    width: 100%;
+    background-color: #141414;
+    color: white;
+    padding: 1rem 2rem; /* Add padding to the left and right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  footer {
+    width: 100%;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* Limit the maximum width */
+    padding: 2rem;
+    flex: 1; /* Ensure content takes up remaining space */
+    margin: 0 auto; /* Center the content */
+  }
+  #ai-content, #image-container {
+    flex: 1;
+    min-width: 0; /* Allow shrinking */
+  }
+  #ai-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 1rem; /* Add some space between ai-content and image-container */
+  }
+  #webcam-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Set the width to match the webcam */
+    height: 300px; /* Set the height to match the webcam */
+    background-color: black; /* Black background if no webcam */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Ensure content stays within rounded corners */
+  }
+  .highest-prob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Adjust width as needed */
+    height: 40%;
+    margin-top: -5rem;
+    margin-left: -7rem
+
+    
+  }
+  #image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  .logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 1rem;
+    letter-spacing: .1rem;
+  }
+  .fancy-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #121519;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .fancy-button:hover {
+    background-color: gray;
+  }
+
+  .img-main {
+    border-radius: 20px;
+  }

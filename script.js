@@ -1,10 +1,8 @@
 //edit path link
 const URL = "model/";
 
+let isRunning = false; // Track the state of the process
 let model, webcam, labelContainer, maxPredictions;
-
-
-
 
 /* Project breakdown to code this web app
  *
@@ -24,6 +22,16 @@ let model, webcam, labelContainer, maxPredictions;
 
 // Load the image model and setup the webcam
 async function init() {
+
+  // If the process is running, stop it on click again
+  if (isRunning) {
+    stopProcess();
+    return; //Won't excute the rest of the code
+  }
+
+  isRunning = true;
+  document.querySelector('.fancy-button').innerHTML = "Stop";
+
   const modelURL = URL + "model.json";
   const metadataURL = URL + "metadata.json";
 
@@ -31,11 +39,9 @@ async function init() {
   model = await tmImage.load(modelURL, metadataURL); //initializes ai model OBJECT
   maxPredictions = model.getTotalClasses(); //total number of classes(sibjects) from techable machine ai model
 
-
-
   // TensorFlow built in function to setup a webcam
   const flip = true; // whether to flip the webcam
-  webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+  webcam = new tmImage.Webcam(300, 300, flip); // width, height, flip
   await webcam.setup(); // request access to the webcam
   await webcam.play(); //plays webcam once approved
   window.requestAnimationFrame(loop); //calls loop function to loop the prediction and frame
@@ -51,9 +57,22 @@ async function init() {
   }
 }
 
+// Stop the process and clears the webcam. sets to original state
+function stopProcess() {
+  isRunning = false;
+  document.querySelector('.fancy-button').innerHTML = "Start";
+  if (webcam) {
+    webcam.stop(); // Stop the webcam
+    document.getElementById("webcam-container").innerHTML = ""; // Clear the webcam container
+  }
+  if (labelContainer) {
+    labelContainer.innerHTML = ""; // Clear the label container
+  }
+}
 
 // loop the webcam frame and prediction
 async function loop() {
+  if (!isRunning) return;
   webcam.update(); // update the webcam frame
   await predict(); //calls predict function and runs the webcam image through the image model
   window.requestAnimationFrame(loop);
@@ -62,19 +81,20 @@ async function loop() {
 // run the webcam image through the image model
 async function predict() {
   // predict can take in an image, video or canvas html element
-  const prediction = await model.predict(webcam.canvas);
-  for (let i = 0; i < maxPredictions; i++) {
-    const classPrediction =
-      prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-    labelContainer.childNodes[i].innerHTML = classPrediction;
-  }
+  const prediction = await model.predict(webcam.canvas); //Commented out for loop so that probabiliy is not printed out
+  // for (let i = 0; i < maxPredictions; i++) {
+  //   const classPrediction =
+  //     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+  //   labelContainer.childNodes[i].innerHTML = classPrediction;
+  // }
 
   const finalPredict = document.querySelector(".highest-prob");
 
-
-
   //The algrothim to determine the highest probability
   
+
+
+
   //TODO: Add all 26 letters once model is developed
   if (prediction[1].probability.toFixed(2) > 0.7) {
     finalPredict.innerHTML = prediction[1].className;
