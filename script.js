@@ -76,13 +76,9 @@ async function predict() {
   //The algrothim to determine the highest probability
   
   //TODO: Add all 26 letters once model is developed
-  if (prediction[0].probability.toFixed(2) > 0.7) {
-    finalPredict.innerHTML = prediction[0].className;
-  } else if (prediction[1].probability.toFixed(2) > 0.7) {
+  if (prediction[1].probability.toFixed(2) > 0.7) {
     finalPredict.innerHTML = prediction[1].className;
-  } else if (prediction[2].probability.toFixed(2) > 0.7) {
-    finalPredict.innerHTML = prediction[2].className;
-  } else if (prediction[3].probability.toFixed(2) > 0.7) {
-    finalPredict.innerHTML = prediction[3].className;
+  } else  {
+    finalPredict.innerHTML = "No Sign Detected";
   }
 }
