@@ -11,26 +11,32 @@
       <div class="logo">HandSign AI</div>
       <div>
         <a href="about.html">About</a>
-        <a href="source.html">Source Code</a>
+        <a href="https://github.com/Traman2/SignlangAI" target="blank"
+          >Source Code</a
+        >
       </div>
     </nav>
 
     <div class="content">
       <div id="ai-content">
         <div>AI Image Model</div>
-        <div style="margin-top: 20px;" id="webcam-container"></div>
-        <button class="fancy-button" type="button" onclick="init()">Start</button>
+        <div style="margin-top: 20px" id="webcam-container"></div>
+        <button class="fancy-button" type="button" onclick="init()">
+          Start
+        </button>
         <div style="margin-top: 20px" id="label-container"></div>
         <div class="highest-prob"></div>
       </div>
       <div id="image-container">
-        <img class="img-main" src="assets/Hand-sign-of-American-alphabet.png" alt="picture of hand signs" />
+        <img
+          class="img-main"
+          src="assets/Hand-sign-of-American-alphabet.png"
+          alt="picture of hand signs"
+        />
       </div>
     </div>
 
-    <footer>
-      &copy; 2024 HandSign AI. All rights reserved.
-    </footer>
+    <footer>&copy; 2024 HandSign AI. All rights reserved.</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
