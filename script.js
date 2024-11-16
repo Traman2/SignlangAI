@@ -4,20 +4,11 @@ const URL = "model/";
 let model, webcam, labelContainer, maxPredictions;
 
 
-<<<<<<< HEAD
 
 
 /* Project breakdown to code this web app
  *
  * 1. Load the model and metadata urls and initializes TensorFlow model OBJECT (Subject)/ Use TensorFlow.js
-=======
-//karthik testtttr
-
-
-/* Project breakdown
- *
- * 1. Load the model and metadata urls and initializes TensorFlow model OBJECT (Subject)
->>>>>>> 9a011a3501a7e6d5235c61d5c9190e03f3e386fd
  * 2. Setup the webcam
  * 3. Append the webcam to the DOM
  * 4. Predict the webcam image
@@ -27,10 +18,7 @@ let model, webcam, labelContainer, maxPredictions;
  * 8. Update the webcam frame
  * 9. Request the webcam frame
  * 10. Display the class labels
-<<<<<<< HEAD
  * 11. Run algrothim on class predictions and display the highest probability
-=======
->>>>>>> 9a011a3501a7e6d5235c61d5c9190e03f3e386fd
  * 
  */
 
@@ -67,11 +55,7 @@ async function init() {
 // loop the webcam frame and prediction
 async function loop() {
   webcam.update(); // update the webcam frame
-<<<<<<< HEAD
   await predict(); //calls predict function and runs the webcam image through the image model
-=======
-  await predict();
->>>>>>> 9a011a3501a7e6d5235c61d5c9190e03f3e386fd
   window.requestAnimationFrame(loop);
 }
 
