@@ -1,6 +1,6 @@
-# SignlangAI
+# SignLang AI
 
-SignlangAI is a project aimed at developing an AI-based system to recognize and interpret sign language. This project leverages machine learning and computer vision techniques to provide real-time translation of sign language into text.
+SignLang AI is a project aimed at developing an AI-based system to recognize and interpret sign language. This project leverages machine learning and computer vision techniques to provide real-time translation of sign language into text.
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@ SignlangAI is a project aimed at developing an AI-based system to recognize and 
 - [Credits](#credits)
 ## Introduction
 
-SignlangAI is designed to bridge the communication gap between sign language users and non-sign language users. By using advanced AI models, this project aims to provide accurate and efficient translation of sign language gestures.
+SignLang AI is designed to bridge the communication gap between sign language users and non-sign language users. By using advanced AI models, this project aims to provide accurate and efficient translation of sign language gestures.
 
 ## Features
 
@@ -22,7 +22,7 @@ SignlangAI is designed to bridge the communication gap between sign language use
 
 ## Installation
 
-To install and run SignlangAI, follow these steps:
+To install and run SignLang AI, follow these steps:
 
 1. Clone repository or down load files to directory
 2. Ensure that model directories are correct and PATH url is correct in scrip.js
@@ -30,7 +30,7 @@ To install and run SignlangAI, follow these steps:
 
 ## Usage
 
-To start using SignlangAI, run index.html
+To start using SignLang AI, run index.html
 
 ## Credits
 
