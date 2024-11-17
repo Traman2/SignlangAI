@@ -9,8 +9,6 @@ SignlangAI is a project aimed at developing an AI-based system to recognize and 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 SignlangAI is designed to bridge the communication gap between sign language users and non-sign language users. By using advanced AI models, this project aims to provide accurate and efficient translation of sign language gestures.
@@ -36,8 +34,4 @@ To start using SignlangAI, run index.html
 
 ## Contributing
 
-We welcome contributions to SignlangAI! Please read our [contributing guidelines](CONTRIBUTING.md) for more information.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Contributions to project is not allowed. Access to commit and fork is disabled. 
