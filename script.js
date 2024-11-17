@@ -96,9 +96,89 @@ async function predict() {
 
 
   //TODO: Add all 26 letters once model is developed
-  if (prediction[1].probability.toFixed(2) > 0.7) {
+
+  if (prediction[0].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[0].className;
+  } 
+  else if (prediction[1].probability.toFixed(2) > 0.7) {
     finalPredict.innerHTML = prediction[1].className;
-  } else  {
-    finalPredict.innerHTML = "No Sign Detected";
-  }
+  } 
+  else if (prediction[2].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[2].className;
+  } 
+  else if (prediction[3].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[3].className;
+  } 
+  else if (prediction[4].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[4].className;
+  } 
+  else if (prediction[5].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[5].className;
+  } 
+  else if (prediction[6].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[6].className;
+  } 
+  else if (prediction[7].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[7].className;
+  } 
+  else if (prediction[8].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[8].className;
+  } 
+  else if (prediction[9].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[9].className;
+  } 
+  else if (prediction[10].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[10].className;
+  } 
+  else if (prediction[11].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[11].className;
+  } 
+  else if (prediction[12].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[12].className;
+  } 
+  else if (prediction[13].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[13].className;
+  } 
+  else if (prediction[14].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[14].className;
+  } 
+  else if (prediction[15].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[15].className;
+  } 
+  else if (prediction[16].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[16].className;
+  } 
+  else if (prediction[17].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[17].className;
+  } 
+  else if (prediction[18].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[18].className;
+  } 
+  else if (prediction[19].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[19].className;
+  } 
+  else if (prediction[20].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[20].className;
+  } 
+  else if (prediction[21].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[21].className;
+  } 
+  else if (prediction[22].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[22].className;
+  } 
+  else if (prediction[23].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[23].className;
+  } 
+  else if (prediction[24].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[24].className;
+  } 
+  else if (prediction[25].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[25].className;
+  } 
+  else if (prediction[26].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[26].className;
+  } 
+  else if (prediction[27].probability.toFixed(2) > 0.7) {
+    finalPredict.innerHTML = prediction[27].className;
+  } 
 }
