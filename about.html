@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - HandSign AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #1b1b1b;
+        overflow: hidden; /* Prevent vertical scroll */
+      }
+
+      nav {
+        width: 100%;
+        background-color: #141414;
+        color: white;
+        padding: 1rem 2rem; /* Add padding to the left and right */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      footer {
+        width: 100%;
+        background-color: #141414;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px; /* Limit the maximum width */
+        padding: 2rem;
+        flex: 1; /* Ensure content takes up remaining space */
+        margin: 0 auto; /* Center the content */
+      }
+
+      .card {
+        background-color: #2c2c2c;
+        color: white;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      .card a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SignLang AI</div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/Traman2/SignlangAI" target="blank"
+          >Source Code</a
+        >
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="card">
+        <h2>About HandSign AI</h2>
+        <p>
+          HandSign AI is an innovative project aimed at recognizing hand signs
+          using AI technology. Our goal is to bridge the communication gap for
+          individuals who use sign language.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to leverage the power of AI to create accessible and
+          inclusive communication tools for everyone. We believe in the
+          potential of technology to make a positive impact on society.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or would like to get involved, please reach
+          out to us at
+          <a href="mailto:tejassraman@gmail.com">tejassraman@gmail.com</a>.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Authors</h2>
+        <p>This project was developed by Tejas, Karthik, Aashish, and Om</p>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 SignLang AI. All rights reserved.</footer>
+  </body>
 </html>
