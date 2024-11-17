@@ -8,7 +8,7 @@ SignlangAI is a project aimed at developing an AI-based system to recognize and 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Credits](#credits)
 ## Introduction
 
 SignlangAI is designed to bridge the communication gap between sign language users and non-sign language users. By using advanced AI models, this project aims to provide accurate and efficient translation of sign language gestures.
@@ -32,6 +32,6 @@ To install and run SignlangAI, follow these steps:
 
 To start using SignlangAI, run index.html
 
-## Contributing
+## Credits
 
-Contributions to project is not allowed. Access to commit and fork is disabled. 
+This project was created by Karthik, Tejas, Aashish, and Om
